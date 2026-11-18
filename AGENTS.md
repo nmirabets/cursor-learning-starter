@@ -26,4 +26,4 @@ Each project folder holds its `data/`, `PROJECT_BRIEF.md`, `DATA_NOTES.md`, `QUE
 - Environment: `.venv` with the libraries in `requirements.txt`. Do not add a library without asking the student first; if they agree, add it to `requirements.txt` and `docs/TECH_STACK.md`.
 - Work in Jupyter notebooks inside each project folder (for example `01_data_analysis/analysis.ipynb`). Read data with relative paths (`data/...`).
 - Decisions go in `docs/DECISIONS.md`; tools and libraries in `docs/TECH_STACK.md`.
-- The student runs the cells. Do not claim a cell works until they have run it and shared the output.
+- You write and run the cells; the student reads them and makes the analysis decisions. Never ask them to paste output.

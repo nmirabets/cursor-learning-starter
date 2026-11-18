@@ -2,7 +2,7 @@
 
 A starter repo for learning to work with an AI coding agent **without handing over your thinking**.
 
-The agent in this repo is set up as a guide, not a ghostwriter. **You** decide what to explore, which question to answer and how. The agent writes small pieces of code, explains them, offers options with their trade-offs, and asks you what you notice. You read and run every line.
+The agent in this repo is set up as a guide, not a ghostwriter. **You** decide what to explore, which question to answer and how. The agent does the mechanics (writing and running the code, summarising results) and stops at every decision that changes the analysis, offering options with their trade-offs. You read every line and make the calls.
 
 ```
 01_data_analysis/      in class: Barcelona Airbnb listings
@@ -46,10 +46,10 @@ AGENTS.md              who you are and what this project is for
 
 The same four steps work for any dataset. Open the Agent panel (`Cmd+I` / `Ctrl+I`); start a new chat for each step.
 
-1. **Explore**, in Agent mode: `/explore-data`. You choose what to look at; after each output, say what you notice. You end with `DATA_NOTES.md`.
+1. **Explore**, in Agent mode: `/explore-data`. The agent gives you an overview of the data; you choose what to dig into. You end with `DATA_NOTES.md`.
 2. **Frame**, in Agent mode: `/frame-question`. Write the question **you** want to answer; the agent helps you make it precise and answerable. You end with `QUESTION.md`.
 3. **Plan**, in Plan mode (`Shift+Tab`): `/plan-analysis` (or your own prompt / `/guided-ml` for the ML project). Answer its questions, read the plan, edit it, and click **Build** only when you understand every step.
-4. **Build and review**: run every cell yourself, use `/explain` on anything you can't explain out loud, and finish with `/review` and `/quiz-me`.
+4. **Build and review**: the agent builds one phase at a time and stops at each decision. Read every cell; use `/explain` on anything you can't explain out loud, and finish with `/review` (and `/quiz-me` if you want to test yourself).
 
 If the agent goes in the wrong direction, do not patch it with ten follow-up messages. Go back to the plan, fix it, and run it again.
 

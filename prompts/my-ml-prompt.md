@@ -19,7 +19,7 @@ Keep this file updated: if you change the prompt during the project, write down 
 
 
 ## Process
-<!-- How do you want to work together? Questions, plan, step size, predictions, logging. -->
+<!-- How do you want to work together? Which decisions it must ask you, how big each step is, what it logs. -->
 
 
 ## Constraints

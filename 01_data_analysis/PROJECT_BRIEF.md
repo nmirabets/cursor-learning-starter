@@ -9,7 +9,7 @@ A Barcelona city-council team that is preparing a report on short-term rentals. 
 1. **Explore** (`/explore-data`): get to know the data in `eda.ipynb`. Write what you learn in `DATA_NOTES.md`.
 2. **Frame** (`/frame-question`): choose your question and write it in `QUESTION.md`.
 3. **Plan** (`/plan-analysis` in Plan mode): decide how to answer it.
-4. **Build and review**: `analysis.ipynb`, one cell at a time. Then `/review` and `/quiz-me`.
+4. **Build and review**: `analysis.ipynb`, one phase at a time. Then `/review` and `/quiz-me`.
 
 The question is yours. The agent will help you sharpen it, but it will not choose it for you.
 

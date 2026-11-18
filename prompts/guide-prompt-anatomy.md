@@ -42,15 +42,15 @@ and an explanation of it that a non-technical person understands.
   You may suggest one, but I choose.
 - Then write the plan with phases, the technologies we use and why, and the
   decisions still open in each phase.
-- During the build: one cell at a time (max ~15 lines), explain it before
-  writing it, I run it and tell you the output.
-- Every few cells, ask me to predict the output first.
+- During the build: one phase at a time. Write and run the cells, tell me
+  what the results show in a few sentences, and stop at every decision that
+  changes the model. Don't ask me trivia; ask me decisions.
 - Log every decision in @docs/DECISIONS.md and every tool in @docs/TECH_STACK.md.
 
 ## Constraints
 - Do not add libraries without asking me.
-- Do not skip phases or write several cells at once, even if I get impatient.
-- If I make a mistake, ask me questions that help me find it before fixing it.
+- Do not skip phases or build the whole notebook at once.
+- Never choose the metric, the threshold or the features for me.
 
 ## Done when
 - The notebook runs top to bottom.
