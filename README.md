@@ -1,23 +1,15 @@
 # Cursor learning starter
 
-A starter repo for learning to work with an AI coding agent **without handing over your thinking**.
-
-The agent in this repo is set up as a guide, not a ghostwriter. **You** decide what to explore, which question to answer and how. The agent does the mechanics (writing and running the code, summarising results) and stops at every decision that changes the analysis, offering options with their trade-offs. You read every line and make the calls.
+Learn to work with an AI coding agent **without handing over your thinking**: one real dataset, one prompt, and you in charge of every decision.
 
 ```
-01_data_analysis/      in class: Barcelona Airbnb listings
-02_machine_learning/   homework: telecom customer churn
-  data/                  the dataset
-  PROJECT_BRIEF.md       the client and the data dictionary
-  DATA_NOTES.md          what you learn while exploring
-  QUESTION.md            the question you chose to answer
-prompts/               how to write a prompt for an agent + your template
-docs/DECISIONS.md      every decision you make, and why
-docs/TECH_STACK.md     every tool and library you use, and why
-.cursor/rules/         always-on instructions for the agent (learning mode)
-.cursor/skills/        workflows: /explore-data, /frame-question, /plan-analysis, /guided-ml
-.cursor/commands/      reusable prompts: /explain, /review, /quiz-me
-AGENTS.md              who you are and what this project is for
+DATASET.md          what the data is, where it comes from, what it can and can't tell you
+PROJECT_BRIEF.md    the client and the deliverables
+PROMPT.md           the prompt that makes the agent guide you (read it, adapt it, paste it)
+data/               Airbnb listings in Barcelona
+docs/DECISIONS.md   every decision you make, and why
+docs/TECH_STACK.md  every tool and library you use, and why
+.cursor/rules/      a safety net: always-on instructions that keep you in charge
 ```
 
 ## 1. Setup (once)
@@ -42,18 +34,13 @@ AGENTS.md              who you are and what this project is for
 
 5. Open any `.ipynb`, click **Select Kernel** (top right) and pick `.venv`.
 
-## 2. How to work in this repo
+## 2. Run the project
 
-The same four steps work for any dataset. Open the Agent panel (`Cmd+I` / `Ctrl+I`); start a new chat for each step.
+1. Read [`DATASET.md`](DATASET.md) and [`PROJECT_BRIEF.md`](PROJECT_BRIEF.md).
+2. Open [`PROMPT.md`](PROMPT.md), adapt it, paste it into a new Agent chat (`Cmd+I` / `Ctrl+I`).
+3. The agent works in four stages: **explore, question, plan, build**. It stops at every decision; you choose.
+4. Read every cell it writes. If you can't explain one, ask it.
 
-1. **Explore**, in Agent mode: `/explore-data`. The agent gives you an overview of the data; you choose what to dig into. You end with `DATA_NOTES.md`.
-2. **Frame**, in Agent mode: `/frame-question`. Write the question **you** want to answer; the agent helps you make it precise and answerable. You end with `QUESTION.md`.
-3. **Plan**, in Plan mode (`Shift+Tab`): `/plan-analysis` (or your own prompt / `/guided-ml` for the ML project). Answer its questions, read the plan, edit it, and click **Build** only when you understand every step.
-4. **Build and review**: the agent builds one phase at a time and stops at each decision. Read every cell; use `/explain` on anything you can't explain out loud, and finish with `/review` (and `/quiz-me` if you want to test yourself).
+## Data and licence
 
-If the agent goes in the wrong direction, do not patch it with ten follow-up messages. Go back to the plan, fix it, and run it again.
-
-## Data and licenses
-
-- `01_data_analysis/data/barcelona_listings.csv`: a random sample (8,000 of 15,236 listings, seed 42, 31 columns) of the [Inside Airbnb](https://insideairbnb.com/get-the-data/) Barcelona snapshot from 2026-09-17. Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) by Inside Airbnb.
-- `02_machine_learning/data/telco_churn.csv`: IBM Telco Customer Churn sample dataset, from [IBM/telco-customer-churn-on-icp4d](https://github.com/IBM/telco-customer-churn-on-icp4d), Apache 2.0.
+`data/barcelona_listings.csv`: a random sample (8,000 of 15,236 listings, seed 42, 31 columns) of the [Inside Airbnb](https://insideairbnb.com/get-the-data/) Barcelona snapshot from 2026-09-17. Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) by Inside Airbnb.

@@ -19,7 +19,7 @@ The person you work with is learning to lead an analysis. Spend their attention 
 - Write the notebook cells for one logical step at a time (a few short cells), then stop at the next decision.
 - Look at the results yourself: run the cells if your tools allow; otherwise check with a short `python` command in the terminal using `.venv`. Never ask the student to paste output.
 - After a result that matters, give your read in two or three sentences, flag anything suspicious (missing values, outliers, tiny groups, odd types), and move to the next decision.
-- Keep explanations short. Name a new function the first time and say what it does; `/explain` is there for depth.
+- Keep explanations short. Name a new function the first time and say what it does; go deeper when asked.
 - Never write the whole notebook in one go. A plan is built one phase at a time, even if the build message says to complete every to-do.
 
 ## Record

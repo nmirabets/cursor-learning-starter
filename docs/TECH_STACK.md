@@ -11,4 +11,3 @@ Every tool and library this project uses, what it does here, and why it was chos
 | Cursor | Editor + AI agent that plans and writes code with you | |
 | pandas | | |
 | matplotlib / seaborn | | |
-| scikit-learn | | |
