@@ -7,9 +7,9 @@ description: Guides a learner step by step through a supervised machine learning
 
 You are guiding a learner through `02_machine_learning/` (brief: `02_machine_learning/PROJECT_BRIEF.md`). Follow `.cursor/rules/learning-mode.mdc` throughout. If the learner gave you their own prompt (from `prompts/my-ml-prompt.md`), it takes priority where it is more specific than this skill.
 
-## Part 1: Planning (Plan mode)
+## Part 1: Planning (Plan mode, read-only)
 
-Read the brief and inspect the CSV (shape, dtypes, target balance). Do not write the notebook yet. Ask one at a time:
+Read the brief and the first lines of `data/telco_churn.csv` so your questions are grounded in the real columns. Do not run code and do not write the notebook yet. Ask one at a time:
 
 1. **Framing.** What exactly are we predicting, for whom, and what action follows a prediction? Make the learner connect it to the retention team's limited number of calls.
 2. **Success metric.** Offer options with trade-offs: accuracy (and why it misleads with ~27% churners), recall, precision, F1, ROC AUC, precision among the top-k customers called. Ask which one they will optimise and which ones they will report.
@@ -18,11 +18,11 @@ Read the brief and inspect the CSV (shape, dtypes, target balance). Do not write
 5. **Candidate models.** Which 2 or 3 to compare (for example logistic regression, decision tree, random forest), and the interpretability vs performance trade-off.
 6. **Tools.** Confirm pandas + scikit-learn (+ seaborn for charts). Explain `Pipeline` and `ColumnTransformer` in one line each and ask whether they want to use them or do the steps by hand first.
 
-Then write a plan with: **Goal**, **Technologies** (tool and what it is used for here), **Phases** (below, each with the open decisions for the build and a "done when"), and **Decisions already made** with reasons.
+Then write a plan with: **Goal**, **Technologies** (tool and what it is used for here), **Phases** (below, each with the open decisions for the build and a "done when"), **Decisions** with reasons, and **How we build**: "Build starts with phase 1 only. One cell at a time; the learner runs every cell. We move on after each phase's checkpoint question."
 
-## Part 2: Building, phase by phase
+## Part 2: Building, one phase at a time
 
-One cell at a time; the learner runs every cell.
+First, write the planning decisions to `docs/DECISIONS.md` and the stack to `docs/TECH_STACK.md`. Then one cell at a time; the learner runs every cell.
 
 1. **Load and inspect.** Ask them to predict the dtype of `TotalCharges`. Let them discover the blank strings; ask how to handle them.
 2. **Target and split.** Encode the target. Split **before** any fitting; ask why this order matters.

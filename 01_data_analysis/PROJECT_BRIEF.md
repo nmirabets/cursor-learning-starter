@@ -8,7 +8,7 @@ A Barcelona city-council team that is preparing a report on short-term rentals. 
 
 1. How are listings distributed across districts and room types?
 2. What drives the nightly price: district, room type, size, reviews?
-3. How many listings show a tourist licence number, and does that vary by district or host size?
+3. How many listings show a tourist registration number, and does that vary by district or host size?
 4. Are "professional" hosts (many listings) different from hosts with a single listing?
 
 Part of the work is deciding **which questions to answer and how deep to go**. Defend that choice in `docs/DECISIONS.md`.
@@ -31,8 +31,8 @@ Part of the work is deciding **which questions to answer and how deep to go**. D
 | `number_of_reviews`, `number_of_reviews_ltm`, `reviews_per_month` | Review counts (ltm = last twelve months) |
 | `first_review`, `last_review` | Dates |
 | `review_scores_*` | Scores from 1 to 5 |
-| `license` | Tourist licence number, `Exempt`, or empty |
-| `calculated_host_listings_count` | How many listings the host has in Barcelona |
+| `license` | Free text (with HTML line breaks) listing a Barcelona regional registration number, a Spanish national number and/or `Exempt - seasonal rental`; empty if none shown |
+| `calculated_host_listings_count` | How many listings the host has in all of Barcelona (the full snapshot, not this sample) |
 | `estimated_occupancy_l365d` | Inside Airbnb's estimate of nights booked in the last year |
 | `last_scraped` | Date of the snapshot |
 
