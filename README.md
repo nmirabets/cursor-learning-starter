@@ -2,17 +2,21 @@
 
 A starter repo for learning to work with an AI coding agent **without handing over your thinking**.
 
-The agent in this repo is set up as a guide, not a ghostwriter. It plans with you, asks you one question at a time, offers options with their trade-offs, and lets **you** make every important decision. You read and run every line of code.
+The agent in this repo is set up as a guide, not a ghostwriter. **You** decide what to explore, which question to answer and how. The agent writes small pieces of code, explains them, offers options with their trade-offs, and asks you what you notice. You read and run every line.
 
 ```
-01_data_analysis/      guided example: Barcelona Airbnb listings (in class)
-02_machine_learning/   your project: telecom customer churn (homework)
+01_data_analysis/      in class: Barcelona Airbnb listings
+02_machine_learning/   homework: telecom customer churn
+  data/                  the dataset
+  PROJECT_BRIEF.md       the client and the data dictionary
+  DATA_NOTES.md          what you learn while exploring
+  QUESTION.md            the question you chose to answer
 prompts/               how to write a prompt for an agent + your template
 docs/DECISIONS.md      every decision you make, and why
 docs/TECH_STACK.md     every tool and library you use, and why
 .cursor/rules/         always-on instructions for the agent (learning mode)
-.cursor/skills/        step-by-step guides the agent follows (/guided-analysis, /guided-ml)
-.cursor/commands/      reusable prompts you trigger with / (/explain, /review, /quiz-me)
+.cursor/skills/        workflows: /explore-data, /frame-question, /plan-analysis, /guided-ml
+.cursor/commands/      reusable prompts: /explain, /review, /quiz-me
 AGENTS.md              who you are and what this project is for
 ```
 
@@ -40,12 +44,12 @@ AGENTS.md              who you are and what this project is for
 
 ## 2. How to work in this repo
 
-1. Open the Agent panel (`Cmd+I` / `Ctrl+I`) and switch to **Plan** mode with `Shift+Tab`.
-2. Type `/guided-analysis` (in class) or paste your own prompt from `prompts/my-ml-prompt.md` (homework).
-3. Answer the agent's questions. When you don't know, ask it to explain the options. **You decide.**
-4. Read the plan it writes. Edit it. Only click **Build** when you understand every step.
-5. While building: run every cell yourself, use `/explain` on anything you can't explain out loud, and check `docs/DECISIONS.md` grows with each decision.
-6. Finish with `/review` and `/quiz-me`.
+The same four steps work for any dataset. Open the Agent panel (`Cmd+I` / `Ctrl+I`); start a new chat for each step.
+
+1. **Explore**, in Agent mode: `/explore-data`. You choose what to look at; after each output, say what you notice. You end with `DATA_NOTES.md`.
+2. **Frame**, in Agent mode: `/frame-question`. Write the question **you** want to answer; the agent helps you make it precise and answerable. You end with `QUESTION.md`.
+3. **Plan**, in Plan mode (`Shift+Tab`): `/plan-analysis` (or your own prompt / `/guided-ml` for the ML project). Answer its questions, read the plan, edit it, and click **Build** only when you understand every step.
+4. **Build and review**: run every cell yourself, use `/explain` on anything you can't explain out loud, and finish with `/review` and `/quiz-me`.
 
 If the agent goes in the wrong direction, do not patch it with ten follow-up messages. Go back to the plan, fix it, and run it again.
 

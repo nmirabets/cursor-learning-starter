@@ -28,6 +28,8 @@ explain the options and write small pieces of code I can review.
 I finished a data analytics bootcamp: pandas, EDA, statistics, and the basics of
 scikit-learn. Project brief: @02_machine_learning/PROJECT_BRIEF.md
 Data: @02_machine_learning/data/telco_churn.csv
+What I learned exploring it: @02_machine_learning/DATA_NOTES.md
+My question: @02_machine_learning/QUESTION.md
 
 ## Goal
 A churn model the retention team can use to decide whom to call each month,

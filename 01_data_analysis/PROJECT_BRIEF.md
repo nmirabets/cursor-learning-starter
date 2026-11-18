@@ -2,16 +2,16 @@
 
 ## The client
 
-A Barcelona city-council team that is preparing a report on short-term rentals. They are not technical. They want a short, honest analysis they can quote in a meeting, with a few clear charts.
+A Barcelona city-council team that is preparing a report on short-term rentals. They are not technical. They have the data below but no idea what is worth looking at. They want **you** to tell them: find one question worth answering, answer it honestly, and give them a few clear charts they can quote in a meeting.
 
-## Their questions (pick the ones you want to answer; you may add your own)
+## How you will work
 
-1. How are listings distributed across districts and room types?
-2. What drives the nightly price: district, room type, size, reviews?
-3. How many listings show a tourist registration number, and does that vary by district or host size?
-4. Are "professional" hosts (many listings) different from hosts with a single listing?
+1. **Explore** (`/explore-data`): get to know the data in `eda.ipynb`. Write what you learn in `DATA_NOTES.md`.
+2. **Frame** (`/frame-question`): choose your question and write it in `QUESTION.md`.
+3. **Plan** (`/plan-analysis` in Plan mode): decide how to answer it.
+4. **Build and review**: `analysis.ipynb`, one cell at a time. Then `/review` and `/quiz-me`.
 
-Part of the work is deciding **which questions to answer and how deep to go**. Defend that choice in `docs/DECISIONS.md`.
+The question is yours. The agent will help you sharpen it, but it will not choose it for you.
 
 ## The data
 
@@ -38,6 +38,9 @@ Part of the work is deciding **which questions to answer and how deep to go**. D
 
 The data is real, so it is messy. Expect text where you want numbers, missing values, and outliers. Every cleaning step is a decision.
 
-## Deliverable
+## Deliverables
 
-`01_data_analysis/analysis.ipynb` that runs top to bottom, ending with 3 to 5 findings written for the client, plus an updated `docs/DECISIONS.md` and `docs/TECH_STACK.md`.
+1. `eda.ipynb` and `DATA_NOTES.md`: what the data is and what you noticed.
+2. `QUESTION.md`: your question, who it is for, and how you measure it.
+3. `analysis.ipynb`: runs top to bottom and ends with your answer, written for the client in a few sentences.
+4. `docs/DECISIONS.md` and `docs/TECH_STACK.md`, updated.

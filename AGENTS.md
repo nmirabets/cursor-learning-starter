@@ -8,10 +8,18 @@ A data analytics bootcamp graduate. They know Python, pandas, matplotlib/seaborn
 
 Learning. The goal is not a finished notebook; it is a student who can explain and defend every line and every decision in it. The always-on rule in `.cursor/rules/learning-mode.mdc` says how to behave. Follow it even when it would be faster to just write the code.
 
+## Workflow (any dataset)
+
+1. Explore: `explore-data` skill, producing `eda.ipynb` and `DATA_NOTES.md`.
+2. Frame: `frame-question` skill, producing `QUESTION.md`. The question comes from the student.
+3. Plan and build: `plan-analysis` skill (analysis) or `guided-ml` skill (machine learning), or the student's own prompt.
+
 ## Projects
 
-- `01_data_analysis/`: guided analysis of Barcelona Airbnb listings. Brief: `01_data_analysis/PROJECT_BRIEF.md`. Workflow: the `guided-analysis` skill.
-- `02_machine_learning/`: churn prediction on a telecom dataset. Brief: `02_machine_learning/PROJECT_BRIEF.md`. Workflow: the `guided-ml` skill, plus the student's own prompt in `prompts/my-ml-prompt.md`.
+Each project folder holds its `data/`, `PROJECT_BRIEF.md`, `DATA_NOTES.md`, `QUESTION.md` and notebooks.
+
+- `01_data_analysis/`: Barcelona Airbnb listings (in class).
+- `02_machine_learning/`: telecom customer churn (homework; the student's own prompt is in `prompts/my-ml-prompt.md`).
 
 ## Conventions
 
